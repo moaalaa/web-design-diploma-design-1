@@ -1,0 +1,26 @@
+$container-padding: 7em;
+
+.container {
+    padding-right: $container-padding;
+    padding-left: $container-padding;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mb-4 {
+    margin-bottom: 4em;
+}

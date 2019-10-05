@@ -1,0 +1,184 @@
+@import './_variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ecf0f1;
+}
+
+// Start Global Styles
+ul {
+    list-style: none;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+// End Global Styles
+
+// Main Header
+#main-header  {
+    max-height: 120px;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px #ccc;
+
+    .logo {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    nav {
+
+        ul {
+            
+
+            li {
+                margin-right: 30px;
+
+                a {
+                    font-size: 24px;
+
+                    &:hover {
+                        color: $primary-color;                    
+                    }
+                }
+    
+    
+            }
+        }
+
+        
+        
+    }
+}
+
+// Home Section
+#home {
+    height: 500px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 500px;
+        background-color: rgba($color: #292929, $alpha: 0.7);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;        
+        color: #fff;
+        font-size: 70px;
+        font-weight: 400;
+
+        strong {
+            color: $primary-color;
+        }
+    }
+}
+
+// Services Section
+#services {
+    width: 100%;
+
+    .service-item {
+        width: 30%;
+        font-size: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 7px #ccc;
+        background-color: #fff; 
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $primary-color; 
+            color: #fff;
+            
+            h2.service-name {
+                color: #fff;
+            }
+        }
+
+        h2.service-name {
+            margin: 20px;
+            color: $primary-color;
+            cursor: pointer;
+        }
+
+        .service-icon {
+            
+            font-size: 80px;
+            
+        }
+
+        p.service-details {
+            margin: 20px;
+            text-align: center;
+            line-height: 1.4;
+        }
+    }
+}
+
+// About Section
+#about {
+    width: 100%;
+    box-shadow: 1px 1px 7px #ccc;
+    background-color: #fff; 
+    font-size: 20px;
+    color: $secondary-color;
+
+    h2 {
+        text-align: center;
+        padding-top: 0.5em;
+        margin: 0;
+        font-size: 50px;
+        color: $primary-color;
+    }
+
+    .about-image {
+        width: 30%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p.about-details {
+        margin: 20px;
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+
+// Footer Section
+footer {
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: $secondary-color;
+
+        a {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+}
